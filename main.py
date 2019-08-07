@@ -1,7 +1,8 @@
 from discord.ext import commands
+import os
 
 
-TOKEN = 'NjA4NzI2MDY4MjQwNzExNjgx.XUsa-Q.p1KIYX1F84VL23kWMRMP2uk11M8'
+TOKEN = os.environ.get('POSTI_TOKEN')
 client = commands.Bot(command_prefix='p.', case_insensitive=True)
 
 extensions = ['posti']
